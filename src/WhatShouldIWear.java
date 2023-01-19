@@ -14,33 +14,33 @@ public class WhatShouldIWear {
         if ((currentWeather.equals("Sunny") && (currentTemperature >= 20)))
         {
             System.out.println("wear suncream and thinner, cooler clothes");
-        } else if ((currentWeather.equals("Sunny")  && (currentTemperature < 12))) {
+        } else if ((currentWeather.equals("Sunny")  && (currentTemperature <= 12))) {
             System.out.println("wear suncream and warm clothes");
         }
-        else {
+        else if (currentWeather.equals("Sunny")){
             System.out.println("wear suncream and any regular clothes");
         }
 
-        if ((currentWeather.equals("Cloudy") && (currentTemperature > 20))) {
+        else if ((currentWeather.equals("Cloudy") && (currentTemperature >= 20))) {
             System.out.println("wear thinner, cooler clothes");
-        } else if ((currentWeather.equals("Cloudy") && (currentTemperature < 12))) {
+        }
+        else if ((currentWeather.equals("Cloudy") && (currentTemperature <= 12))) {
             System.out.println("wear thicker, warmer clothes");
         }
-        else {
+        else if (currentWeather.equals("Cloudy")) {
             System.out.println("wear regular clothes");
         }
 
-        if ((currentWeather.equals("Rainy") && (currentTemperature > 20))) {
+        else if ((currentWeather.equals("Rainy") && (currentTemperature >= 20))) {
             System.out.println("wear thinner, waterproof clothes");
         }
-        else if ((currentWeather.equals("Rainy") && (currentTemperature < 12 ))) {
+        else if ((currentWeather.equals("Rainy") && (currentTemperature <= 12 ))) {
             System.out.println("wear thicker, warmer, waterproof clothes");
         }
-        else {
+        else if (currentWeather.equals("Rainy")) {
             System.out.println("wear waterproof clothes");
         }
-
-        if (currentWeather.equals("Snowy")) {
+        else {
             System.out.println("wear thick, warm, waterproof clothes and snow-boots");
         }
     }
